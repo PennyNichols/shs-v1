@@ -44,6 +44,7 @@ let firstName = document.querySelector('#first-name');
 let lastName = document.querySelector('#last-name');
 let phone = document.querySelector('#phone');
 let email = document.querySelector('#email');
+let address = document.querySelector('#address');
 let date = document.querySelector('#date');
 let time = document.querySelector('#time');
 let service = document.querySelector('#service');
@@ -73,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
           objectStore.createIndex('lastname', 'lastname', { unique: false } );
           objectStore.createIndex('phone', 'phone', { unique: false } );
           objectStore.createIndex('email', 'email', { unique: false } );
+          objectStore.createIndex('address', 'address', { unique: false } );
           objectStore.createIndex('date', 'date', { unique: false } );
           objectStore.createIndex('time', 'time', { unique: false } );
           objectStore.createIndex('service', 'service', { unique: false } );
@@ -90,6 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
                lastname : lastName.value,               
                phone : phone.value,
                email : email.value,
+               address : address.value,
                date : date.value,
                time : time.value,
                service : service.value,
@@ -131,6 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
                          <p class="font-weight-bold">Last Name :  <span class="font-weight-normal">${cursor.value.lastname}<span></p>
                          <p class="font-weight-bold">Phone Number :  <span class="font-weight-normal">${cursor.value.phone}<span></p>
                          <p class="font-weight-bold">Email Address :  <span class="font-weight-normal">${cursor.value.email}<span></p>
+                         <p class="font-weight-bold">Property Address :  <span class="font-weight-normal">${cursor.value.address}<span></p>
                          <p class="font-weight-bold">Date :  <span class="font-weight-normal">${cursor.value.date}<span></p>
                          <p class="font-weight-bold">Time :  <span class="font-weight-normal">${cursor.value.time}<span></p>
                          <p class="font-weight-bold">Serice :  <span class="font-weight-normal">${cursor.value.service}<span></p>
@@ -198,6 +202,8 @@ function sendEmail() {
       document.getElementById('phone').value +
       '<br> Email Address: ' +
       document.getElementById('email').value +
+      '<br> Property Address: ' +
+      document.getElementById('address').value +
       '<br> Date: ' +
       document.getElementById('date').value +
       '<br> Time: ' +
