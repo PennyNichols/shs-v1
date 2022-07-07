@@ -1,13 +1,13 @@
 :root{
-    --drkBgColor:rgb(33, 85, 41);
-    --lgtBgColor:rgb(229, 236, 230);
+    --drkBgColor:rgb(0, 0, 224);
+    --lgtBgColor:rgb(242, 241, 255);
 
-    --drkAccentColor:rgb(12, 68, 21);
-    --lgtAccentColor:rgb(106, 160, 114);
+    --drkAccentColor:rgb(30, 0, 255);
+    --lgtAccentColor:rgb(255, 1, 1);
 
-    --drkTextColor:rgb(15, 46, 19);
-    --mdTextColor:rgb(94, 124, 99);
-    --lgtTextColor:rgb(234, 240, 235);
+    --drkTextColor:rgb(1, 11, 155);
+    --mdTextColor:rgb(202, 2, 2);
+    --lgtTextColor:rgb(255, 255, 255);
 
     --box-shadow: 4px 3px 15px 3px rgba(0,0,0,0.75);
     --lgt-box-shadow: 1px .5px 3px .5px rgba(0,0,0,0.75);
@@ -31,19 +31,33 @@ h2{
 }
 
 /*Hero Section-*/
+.back-video{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("background.jpg") top center;
+    background: linear-gradient(rgba(255, 0, 0, 0.64)0%, rgba(255, 61, 61, 0.648) 5%, rgba(255, 199, 199, 0.664) 40%, rgba(215, 218, 247, 0.679) 76%, rgba(129, 137, 246, 0.7) 94%, rgba(75, 69, 246, 0.723) 100%);
     background-size: cover;
     position: relative;
     left: 0;
+    overflow: hidden;
     
   }
    
   #hero:before {
     content: "";
-    background: rgba(2, 24, 6, 0.66) linear-gradient(rgba(24, 70, 32, 0.64)0%, rgba(50, 106, 59, 0.648) 5%, rgba(82, 130, 91, 0.664) 40%, rgba(108, 156, 118, 0.679) 76%, rgba(138, 180, 147, 0.7) 94%, rgba(197, 219, 201, 0.723) 100%) repeat scroll 0% 0%;
+    background: rgba(0, 21, 255, 0.66) linear-gradient(rgba(255, 0, 0, 0.64)0%, rgba(255, 61, 61, 0.648) 5%, rgba(255, 199, 199, 0.664) 40%, rgba(215, 218, 247, 0.679) 76%, rgba(129, 137, 246, 0.7) 94%, rgba(75, 69, 246, 0.723) 100%) repeat scroll 0% 0%;
     position: absolute;
     bottom: 0;
     top: 0;
@@ -88,8 +102,8 @@ h2{
     padding: 1rem 3rem;
     transition: 0.5s;
     margin-top: 1.5rem;
-    border: 4px solid var(--drkTextColor);
-    color: var(--drkTextColor);
+    border: 4px solid var(--mdTextColor);
+    color: var(--mdTextColor);
     border-radius: .5rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -150,6 +164,7 @@ h2{
 #nav:hover{
     color: var(--lgtAccentColor);
     text-transform: scale(1.2);
+    transition: .5s;
 }
 
 #navigation li{
@@ -254,7 +269,7 @@ h2{
 .services-list .service-content::before {
   content: '';
   position: absolute;
-  background: rgb(161, 34, 34);
+  background: var(--mdTextColor);
   right: 0;
   left: 0;
   bottom: 0;
@@ -275,10 +290,13 @@ h2{
 }
 
 .service-content .md{
-  color: var(--lgtAccentColor);
+  color: var(--mdTextColor);
 }
 
 .service-content:hover .drk{
+  color: var(--mdTextColor);
+}
+.service-content:hover .md{
   color: var(--lgtTextColor);
 }
 
@@ -316,15 +334,8 @@ h2{
 }
 /*========end of Services ========*/
 /* Counter project style starts*/
-.attributes{
-    background-image:linear-gradient(rgb(12, 57, 20),rgba(221, 237, 224, 0.703)),
-    url(background.jpg);
-    background-position: center;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-attachment: fixed;
-    
-}
+
+
 
 .attributes-wrapper{
     display: grid;
@@ -513,9 +524,9 @@ h2{
   /*===End of Gallery===*/ 
 /*------------------- Reviews  -------------------------*/
 .section-bg{
-    background-image:linear-gradient(rgb(12, 57, 20),rgba(221, 237, 224, 0.703)),
-    url(background.jpg);
-    background-position: center;
+    background-image:linear-gradient(rgba(255, 0, 0, 0.64)0%, rgba(255, 61, 61, 0.648) 5%, rgba(255, 199, 199, 0.664) 40%, rgba(215, 218, 247, 0.679) 76%, rgba(129, 137, 246, 0.7) 94%, rgba(75, 69, 246, 0.523) 100%),
+    url(flag.jpg);
+    background-position: relative;
     padding-top: 5rem;
     padding-bottom: 5rem;
     color: white;
@@ -650,15 +661,7 @@ h2{
 .hours p{
     font-size: 2rem;
 }
-.operating-hours{
-    background-image:linear-gradient(rgb(12, 57, 20),rgba(221, 237, 224, 0.703)),
-    url(background.jpg);
-    background-position: center;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    color: white;
-    background-attachment: fixed;
-}
+
 
 .operating-hours i{
     color: var(--drkAccentColor);
