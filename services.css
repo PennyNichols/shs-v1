@@ -180,6 +180,7 @@ h2{
   gap: 1.5rem;
   justify-content: center;
   align-items: space-between;
+  margin: 1rem;
 }
 .service-content {
   padding: 1rem;
