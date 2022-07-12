@@ -270,6 +270,11 @@ h4{
                          "service-card service-card" 
                          "service-card service-card";
   }
+  .service-content {
+    width: 12rem;
+    height: 9rem;
+    
+}
 }
 
 @media (max-width: 590px){
@@ -282,7 +287,7 @@ h4{
         font-size: 1rem;
     }
     .service-content {
-        width: 10rem;
+        width: 12rem;
         height: 8rem;
         
     }
