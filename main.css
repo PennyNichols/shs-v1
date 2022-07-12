@@ -11,6 +11,8 @@
 
     --box-shadow: 4px 3px 15px 3px rgba(0,0,0,0.75);
     --lgt-box-shadow: 1px .5px 3px .5px rgba(0,0,0,0.75);
+
+    --hazeBoxColor: rgba(255, 255, 255, 0.562);
 }
 
 a{
