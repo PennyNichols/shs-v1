@@ -84,7 +84,7 @@ h2{
   /*==============Nav=====*/
   #navigation {
 	background-color: var(--drkAccentColor);
-    padding: 20px 40px;
+    padding: 0 1rem;
     z-index: 100;
     width: 100%;
     font-size: 2rem;
@@ -264,12 +264,7 @@ h4{
 }
 
 @media(max-width:1130px){
-  .services-wrapper{
-    grid-template-areas: "service-card service-card"
-                         "service-card service-card"
-                         "service-card service-card" 
-                         "service-card service-card";
-  }
+
   .service-content {
     width: 12rem;
     height: 9rem;
@@ -277,18 +272,35 @@ h4{
 }
 }
 
-@media (max-width: 590px){
-    .icon{
+@media (max-width: 875px){
+  .icon{
         font-size: 2rem;
         margin-bottom: .5rem;
     }
     
+  .services-wrapper{
+    gap: .5rem;
+  }
+  .services-wrapper{
+    grid-template-areas: "service-card service-card"
+                        "service-card service-card"
+                        "service-card service-card" 
+                        "service-card service-card";
+  }
+  .service-content {
+      width: 11rem;
+      height: 8rem;
+      padding: 1rem 0;
+  }  
+  .service-card{
+    padding: 0;
+    height: 8rem;
+  }
+}
 
-    .service-content {
-        width: 12rem;
-        height: 8rem;
-        padding: 1rem 0;
-    }
+@media (max-width: 590px){
+
+
 
     .services-wrapper {
       gap: .5rem;
