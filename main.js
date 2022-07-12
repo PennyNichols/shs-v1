@@ -8,14 +8,16 @@ menu.onclick = () =>{
     menu.classList.toggle('fa-times');
 }
 
-let slider = tns({
-    container : ".my-slider",
-    "slideBy" : 1,
-    "speed" : 400,
-    "nav" : false,
-    controlsContainer: "#controls",
-    prevButton : ".previous",
-    nextButton : ".next",
+var gallerySlider = tns({
+     container: ".gallery-slider",
+     items: 40,
+     slideBy: 1,
+     controlsPosition: "bottom",
+     navPosition: "bottom",
+     mouseDrag: true,
+     autoplay: true,
+     autoplayButtonOutput: false,
+     controlsContainer: "#gallery-control",
     responsive: {
         1600: {
             items: 4,
@@ -30,6 +32,9 @@ let slider = tns({
             gutter: 20
         },
         480: {
+            items: 1
+        },
+        300: {
             items: 1
         }
     }
