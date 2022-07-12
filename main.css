@@ -155,7 +155,7 @@ h2{
   /*==============Nav=====*/
   #navigation {
 	background-color: var(--drkAccentColor);
-    padding: 20px 40px;
+    padding: 0 1rem;
     z-index: 100;
     width: 100%;
     font-size: 2rem;
