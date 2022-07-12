@@ -283,13 +283,15 @@ h4{
         margin-bottom: .5rem;
     }
     
-    h4{
-        font-size: 1rem;
-    }
+
     .service-content {
         width: 12rem;
         height: 8rem;
-        
+        padding: 1rem 0;
+    }
+
+    .services-wrapper {
+      gap: .5rem;
     }
 }
 /*========end of Services ========*/
