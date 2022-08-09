@@ -662,6 +662,7 @@ form{
   padding: 2rem;
   border-radius: .5rem;
   box-shadow: var(--box-shadow);
+  margin-bottom: 5rem;
 }
 
 form a{
@@ -718,11 +719,41 @@ input{
 }
 
 /*-------------------------- end contact section ----------------- */
- /*------------------------------------- Footer  --------------------------------------*/
+/* ------------  Start Share section -----------> */
+
+#share-wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+
+.google-review-button{
+  display: flex;
+  gap: 3px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+#google-link{
+  height: 100%;
+  padding: 2px;
+  
+}
+
+#google-link a{
+  color:black;
+  font-size: 12px;
+  line-height: 12px;
+  vertical-align: center;
+}
+
+
+
+
+
+/*------------------------------------- Footer  --------------------------------------*/
 
 #footer{
   background-color: white;
-  padding-top: 1rem;
 }
 
 #footer .footer-top {
@@ -735,7 +766,6 @@ input{
 #footer .footer-top p {
   font-size: 1rem;
   font-style: italic;
-  margin: 1rem 0 0 0;
   padding: 0;
   color: var(--mdTextColor);
 }
