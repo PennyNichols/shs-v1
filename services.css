@@ -568,6 +568,33 @@ h4{
 
 /* About section ends */
 
+/* ------------  Start Share section -----------> */
+
+#share-wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+
+.google-review-button{
+  display: flex;
+  gap: 3px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+#google-link{
+  height: 100%;
+  padding: 2px;
+  
+}
+
+#google-link a{
+  color:black;
+  font-size: 12px;
+  line-height: 12px;
+  vertical-align: center;
+}
+
 
 
 
